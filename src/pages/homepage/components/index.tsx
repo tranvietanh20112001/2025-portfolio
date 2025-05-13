@@ -3,7 +3,7 @@ import { Color } from "../../../components/color";
 import { Header } from "../../../components/header";
 import logo from "../../../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import LazyImage from "../../../components/LazyImage";
+import LazyImage from "../../../components/lazyImage";
 import Cypress from "../../../assets/cypress.svg";
 import Playwright from "../../../assets/playwright.svg";
 import Reflect from "../../../assets/reflect.png";

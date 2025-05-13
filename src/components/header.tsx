@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitch from "./languageSwitch";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/logo.png";
-import LazyImage from "./LazyImage";
+import LazyImage from "./lazyImage";
 export function Header() {
   const { t } = useTranslation();
   const isMobile = useMediaQuery("(max-width: 780px)");
