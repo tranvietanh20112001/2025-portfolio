@@ -5,8 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Tran Portfolio</title>
+    <style>
+      * {
+        scrollbar-width: thin;              /* Firefox */
+        scrollbar-color: #888 #f1f1f1;      /* Firefox */
+      }
+
+      /* Dành cho Chrome, Edge, Safari */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
   </head>
-  <body style="margin: 0 auto;">
+  <body style="margin: 0 auto; ">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

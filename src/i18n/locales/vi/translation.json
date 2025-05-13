@@ -5,5 +5,14 @@
   "GetInTouchBtn": "Liên Hệ",
   "MyName": "Trần Việt Anh",
   "ShortDescription": "Tôi là một kỹ sư phần mềm với niềm đam mê xây dựng các ứng dụng web.",
-  "Experienced": "Kinh Nghiệm với"
+  "Experienced": "Kinh Nghiệm với",
+  "Experience": "Kinh Nghiệm Làm Việc",
+  "ExperienceDescription": "Tôi đã làm việc với nhiều công nghệ và framework khác nhau, bao gồm React, Node.js và nhiều hơn nữa. Kinh nghiệm của tôi bao gồm phát triển các ứng dụng web, API và hợp tác với các nhóm đa chức năng để cung cấp các giải pháp phần mềm chất lượng cao.",
+  "ExpName1": "Công ty TNHH Giải Pháp Công Nghệ Thông Minh",
+  "ExpName2": "Công ty TNHH Giải Pháp Công Nghệ Thông Minh",
+  "ExpName3": "Công ty TNHH Giải Pháp Công Nghệ Thông Minh",
+  "ExpDescription1": "Thực tập sinh phát triển phần mềm tại Công ty TNHH Giải Pháp Công Nghệ Thông Minh, nơi tôi đã học hỏi và phát triển kỹ năng lập trình của mình.",
+  "ExpDescription2": "Thực tập sinh phát triển phần mềm tại Công ty TNHH Giải Pháp Công Nghệ Thông Minh, nơi tôi đã học hỏi và phát triển kỹ năng lập trình của mình.",
+  "ExpDescription3": "Thực tập sinh phát triển phần mềm tại Công ty TNHH Giải Pháp Công Nghệ Thông Minh, nơi tôi đã học hỏi và phát triển kỹ năng lập trình của mình.",
+  "ViewMore": "Xem Thêm"
 }

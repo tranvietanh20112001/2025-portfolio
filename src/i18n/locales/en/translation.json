@@ -5,5 +5,14 @@
   "GetInTouchBtn": "Get In Touch",
   "MyName": "Alex Tran",
   "ShortDescription": "I am a software engineer with a passion for building web applications.",
-  "Experienced": "Experienced with"
+  "Experienced": "Experienced with",
+  "Experience": "Experience",
+  "ExperienceDescription": "I have worked with various technologies and frameworks, including React, Node.js, and more. My experience includes developing web applications, APIs, and collaborating with cross-functional teams to deliver high-quality software solutions.",
+  "ExpName1": "Smart Technology Solutions Co., Ltd",
+  "ExpName2": "Smart Technology Solutions Co., Ltd",
+  "ExpName3": "Smart Technology Solutions Co., Ltd",
+  "ExpDescription1": "Intern Software Developer at Smart Technology Solutions Co., Ltd, where I learned and developed my programming skills.",
+  "ExpDescription2": "Intern Software Developer at Smart Technology Solutions Co., Ltd, where I learned and developed my programming skills.",
+  "ExpDescription3": "Intern Software Developer at Smart Technology Solutions Co., Ltd, where I learned and developed my programming skills.",
+  "ViewMore": "View More"
 }
