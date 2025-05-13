@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitch from "./languageSwitch";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/logo.png";
+import LazyImage from "./LazyImage";
 export function Header() {
   const { t } = useTranslation();
   const isMobile = useMediaQuery("(max-width: 780px)");
@@ -49,7 +50,10 @@ export function Header() {
             },
           }}
         >
-          <img src={logo} alt="logo" width={"30px"} style={{marginLeft: "20px"}}/>
+          <Box width={"32px"} height={"32px"} marginLeft={"20px"}>
+            <LazyImage src={logo} alt="logo" placeholder="logo"/>
+          </Box>
+          
           <MenuIcon sx={{ color: Color.grayText, fontSize: "30px", marginRight:"20px" }} />
         </Box>
       ) : (

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Color } from "../../../components/color";
 import Exp1 from "../../../assets/exp1.jpg";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-
+import LazyImage from "../../../components/LazyImage";
 export function Exp() {
   const { t } = useTranslation();
   const isMobile = useMediaQuery("(max-width: 780px)");
@@ -65,8 +65,8 @@ export function Exp() {
             >
               Auto QA
             </Typography>
-            <Typography>{t("ExpName1")}</Typography>
-            <Typography>{t("ExpDescription1")}</Typography>
+            <Typography variant="body1" fontWeight={600}>{t("ExpName1")}</Typography>
+            <Typography variant="body1" color={Color.grayText} fontSize={isMobile? "10px" : "12px"}>{t("ExpDescription1")}</Typography>
 
             <Button
               variant="contained"
@@ -80,16 +80,10 @@ export function Exp() {
             </Button>
           </Box>
           <Box width={"50%"} height={"100%"}>
-            <img
+            <LazyImage
               src={Exp1}
               alt="exp1"
-              width={"100%"}
-              height={"100%"}
-              style={{
-                borderRadius: "10px",
-                objectFit: "cover",
-                boxShadow: "0 0 10px rgba(0,0,0,0.5)",
-              }}
+              placeholder="exp1"
             />
           </Box>
         </Box>
@@ -102,16 +96,10 @@ export function Exp() {
           height={"320px"}
         >
           <Box width={"50%"} height={"100%"}>
-            <img
+            <LazyImage
               src={Exp1}
               alt="exp1"
-              width={"100%"}
-              height={"100%"}
-              style={{
-                borderRadius: "10px",
-                objectFit: "cover",
-                boxShadow: "0 0 10px rgba(0,0,0,0.5)",
-              }}
+              placeholder="exp1"
             />
           </Box>
 
@@ -132,8 +120,8 @@ export function Exp() {
             >
               Auto QA
             </Typography>
-            <Typography>{t("ExpName1")}</Typography>
-            <Typography>{t("ExpDescription1")}</Typography>
+            <Typography variant="body1" fontWeight={600}>{t("ExpName2")}</Typography>
+            <Typography variant="body1" color={Color.grayText} fontSize={isMobile? "10px" : "12px"}>{t("ExpDescription2")}</Typography>
 
             <Button
               variant="contained"
@@ -172,8 +160,8 @@ export function Exp() {
             >
               Auto QA
             </Typography>
-            <Typography>{t("ExpName1")}</Typography>
-            <Typography>{t("ExpDescription1")}</Typography>
+            <Typography variant="body1" fontWeight={600}>{t("ExpName3")}</Typography>
+            <Typography variant="body1" color={Color.grayText} fontSize={isMobile? "10px" : "12px"}>{t("ExpDescription3")}</Typography>
 
             <Button
               variant="contained"
@@ -186,17 +174,11 @@ export function Exp() {
               {t("ViewMore")}
             </Button>
           </Box>
-          <Box width={"50%"} height={"100%"}>
-            <img
+          <Box width={"50%"} height={"320px"}>
+            <LazyImage
               src={Exp1}
               alt="exp1"
-              width={"100%"}
-              height={"100%"}
-              style={{
-                borderRadius: "10px",
-                objectFit: "cover",
-                boxShadow: "0 0 10px rgba(0,0,0,0.5)",
-              }}
+              placeholder="exp1"
             />
           </Box>
         </Box>

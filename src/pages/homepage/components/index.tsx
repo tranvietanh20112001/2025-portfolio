@@ -3,7 +3,12 @@ import { Color } from "../../../components/color";
 import { Header } from "../../../components/header";
 import logo from "../../../assets/logo.png";
 import { useTranslation } from "react-i18next";
-
+import LazyImage from "../../../components/LazyImage";
+import Cypress from "../../../assets/cypress.svg";
+import Playwright from "../../../assets/playwright.svg";
+import Reflect from "../../../assets/reflect.png";
+import ReactLogo from "../../../assets/react.png";
+import NextJS from "../../../assets/nextjs.png";
 export function Index() {
   const { t } = useTranslation();
 
@@ -19,6 +24,17 @@ export function Index() {
     alignItems: "center",
   };
 
+  const iconBoxStyle = {
+    width: "24px",
+    height: "24px",
+    borderRadius: "4px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "white",
+    padding: "8px",
+  };
+
   const Experienced = [
     { name: "Cypress", href: "/" },
     { name: "Playwright", href: "/" },
@@ -26,6 +42,14 @@ export function Index() {
     { name: "React", href: "/" },
     { name: "NextJS", href: "/" },
   ];
+
+  const ExperiencedIcon = [
+    { name: Cypress, href: "/" },
+    { name: Playwright, href: "/" },
+    { name: Reflect, href: "/" },
+    { name: ReactLogo, href: "/" },
+    { name: NextJS, href: "/" },
+  ]
   return (
     <Box
       width={"100%"}
@@ -52,8 +76,8 @@ export function Index() {
         >
           {isMobile ? (
             <>
-              <Box width={"40%"} height={"100%"}>
-                <img src={logo} alt="" width={"100%"} />
+              <Box width={"auto"} height={"auto"}>
+                <LazyImage src={logo} alt="" />
               </Box>
 
               <Box
@@ -61,6 +85,7 @@ export function Index() {
                 display={"flex"}
                 flexDirection={"column"}
                 justifyContent={"center"}
+                mt={isMobile? "24px": 0}
               >
                 <Typography variant="h2" color="white" gutterBottom>
                   {t("MyName")}
@@ -86,7 +111,7 @@ export function Index() {
                 </Typography>
               </Box>
               <Box width={"40%"} height={"100%"}>
-                <img src={logo} alt="" width={"100%"} />
+                 <LazyImage src={logo} alt="" />
               </Box>
             </>
           )}
@@ -99,7 +124,7 @@ export function Index() {
 
           <Box
             width={"100%"}
-            display={"flex"}
+            display={isMobile? "none": "flex"}
             justifyContent={"space-between"}
             alignItems={"center"}
           >
@@ -108,6 +133,18 @@ export function Index() {
                 <Typography variant="body1" color={Color.grayText}>
                   {item.name}
                 </Typography>
+              </Box>
+            ))}
+          </Box>
+
+          <Box
+            width={"100%"}
+            display={isMobile? "flex": "none"}
+            gap={"24px"}
+          >
+            {ExperiencedIcon.map((item, index) => (
+              <Box sx={iconBoxStyle} key={index}>
+                <LazyImage src={item.name} alt={item.name} />
               </Box>
             ))}
           </Box>
