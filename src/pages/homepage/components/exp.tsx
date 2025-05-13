@@ -2,8 +2,6 @@ import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { Color } from "../../../components/color";
 import Exp1 from "../../../assets/exp1.jpg";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export function Exp() {
@@ -82,10 +80,9 @@ export function Exp() {
             </Button>
           </Box>
           <Box width={"50%"} height={"100%"}>
-            <LazyLoadImage
+            <img
               src={Exp1}
               alt="exp1"
-              effect="blur"
               width={"100%"}
               height={"100%"}
               style={{
@@ -105,10 +102,9 @@ export function Exp() {
           height={"320px"}
         >
           <Box width={"50%"} height={"100%"}>
-            <LazyLoadImage
+            <img
               src={Exp1}
               alt="exp1"
-              effect="blur"
               width={"100%"}
               height={"100%"}
               style={{
@@ -191,10 +187,9 @@ export function Exp() {
             </Button>
           </Box>
           <Box width={"50%"} height={"100%"}>
-            <LazyLoadImage
+            <img
               src={Exp1}
               alt="exp1"
-              effect="blur"
               width={"100%"}
               height={"100%"}
               style={{

@@ -3,8 +3,7 @@ import { Color } from "../../../components/color";
 import { Header } from "../../../components/header";
 import logo from "../../../assets/logo.png";
 import { useTranslation } from "react-i18next";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+
 export function Index() {
   const { t } = useTranslation();
 
@@ -54,7 +53,7 @@ export function Index() {
           {isMobile ? (
             <>
               <Box width={"40%"} height={"100%"}>
-                <LazyLoadImage src={logo} alt="" width={"100%"} effect="blur" />
+                <img src={logo} alt="" width={"100%"} />
               </Box>
 
               <Box
@@ -87,7 +86,7 @@ export function Index() {
                 </Typography>
               </Box>
               <Box width={"40%"} height={"100%"}>
-                <LazyLoadImage src={logo} alt="" width={"100%"} effect="blur" />
+                <img src={logo} alt="" width={"100%"} />
               </Box>
             </>
           )}

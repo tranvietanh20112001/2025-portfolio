@@ -7,8 +7,6 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitch from "./languageSwitch";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/logo.png";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 export function Header() {
   const { t } = useTranslation();
   const isMobile = useMediaQuery("(max-width: 780px)");
@@ -51,7 +49,7 @@ export function Header() {
             },
           }}
         >
-          <LazyLoadImage src={logo} alt="logo" effect="blur" width={"30px"} style={{marginLeft: "20px"}}/>
+          <img src={logo} alt="logo" width={"30px"} style={{marginLeft: "20px"}}/>
           <MenuIcon sx={{ color: Color.grayText, fontSize: "30px", marginRight:"20px" }} />
         </Box>
       ) : (
