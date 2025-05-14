@@ -1,9 +1,9 @@
 import { Box, Button, Typography, useMediaQuery } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { Color } from '../../../components/Color'
+import { Color } from '../../../components/color'
 import Exp1 from '../../../assets/exp1.jpg'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
-import LazyImage from '../../../components/LazyImage'
+import LazyImage from '../../../components/lazyImage'
 export function Exp() {
     const { t } = useTranslation()
     const isMobile = useMediaQuery('(max-width: 780px)')
