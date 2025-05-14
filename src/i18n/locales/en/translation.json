@@ -17,5 +17,17 @@
   "ViewMore": "View More",
   "GetInTouch": "Get In Touch",
   "GetInTouchDescription": "If you have any questions or would like to discuss a project, feel free to reach out to me. I am always open to new opportunities and collaborations.",
-  "ContactMe": "Contact Me"
+  "ContactMe": "Contact Me",
+  "ProjectTitle": "Projects",
+  "ProjectDescription": "Here are some of the projects I have worked on. Each project showcases my skills and experience in web development.",
+  "Project1": "Project 1",
+  "Project2": "Project 2",
+  "Project3": "Project 3",
+  "Project4": "Project 4",
+  "BlogTitle": "Blogs",
+  "BlogDescription": "I enjoy writing about technology, programming, and my experiences in the software development field. Here are some of my latest blog posts.",
+  "Blog1": "Blog 1",
+  "Blog2": "Blog 2",
+  "Blog3": "Blog 3",
+  "Blog4": "Blog 4"
 }

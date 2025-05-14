@@ -8,4 +8,5 @@ export const Color = {
     sea: '#D0E6FF',
     orange: '#FFA217',
     sun: '#FFF6E9',
+    white: '#FFFFFF',
 }

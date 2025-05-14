@@ -13,6 +13,7 @@ const StyledImage = styled('img')(() => ({
     borderRadius: '10px',
     opacity: 0,
     filter: 'blur(10px)',
+    cursor: 'pointer',
     transition: 'opacity 0.5s ease-in-out, filter 0.5s ease-in-out',
 
     '&.loaded': {

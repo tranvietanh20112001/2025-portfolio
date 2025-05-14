@@ -51,7 +51,7 @@ export function Contact() {
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '32px',
-                        width: '360px',
+                        width: isMobile ? '90%' : '480px',
                         mx: 'auto',
                         mt: '12px',
                     }}

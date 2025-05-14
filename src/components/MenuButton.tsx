@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, useMediaQuery } from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings'
 import { useState } from 'react'
 import { Color } from './color'
@@ -40,6 +40,7 @@ const actionButtons = [
 
 export function MenuButton() {
     const [isOpen, setIsOpen] = useState(false)
+    const isMobile = useMediaQuery('(max-width:780px)')
 
     const commonBoxStyles = {
         width: 48,
@@ -49,7 +50,7 @@ export function MenuButton() {
         alignItems: 'center',
         justifyContent: 'center',
         position: 'fixed',
-        right: 32,
+        right: isMobile ? 8 : 32,
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
         zIndex: 1000,
         cursor: 'pointer',
@@ -58,7 +59,7 @@ export function MenuButton() {
     return (
         <>
             <Box
-                bottom={'60px'}
+                bottom={isMobile ? '18px' : '60px'}
                 bgcolor="white"
                 border="2px solid"
                 borderColor={Color.orange}
