@@ -4,7 +4,6 @@ import Link from '@mui/material/Link'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { useTranslation } from 'react-i18next'
-import LanguageSwitch from './languageSwitch'
 import MenuIcon from '@mui/icons-material/Menu'
 import logo from '../assets/logo.png'
 import LazyImage from './lazyImage'
@@ -93,8 +92,6 @@ export function Header() {
                             )}
                         </Link>
                     ))}
-
-                    <LanguageSwitch />
                 </Box>
             )}
         </>
