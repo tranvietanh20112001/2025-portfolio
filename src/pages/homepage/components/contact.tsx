@@ -7,7 +7,7 @@ import {
     useMediaQuery,
 } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { Color } from '../../../components/color'
+import { Color } from '../../../components/Color'
 import SendIcon from '@mui/icons-material/Send'
 import VietNameFlag from '../../../assets/vietnam.png'
 export function Contact() {
