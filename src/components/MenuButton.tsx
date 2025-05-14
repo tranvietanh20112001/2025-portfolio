@@ -35,7 +35,6 @@ const actionButtons = [
                 <DownloadIcon />
             </Box>
         ),
-        animate: true,
     },
 ]
 
