@@ -20,7 +20,7 @@ export function Contact() {
             minWidth={'320px'}
             display={'flex'}
             flexDirection={'column'}
-            height={'100vh'}
+            height={isMobile ? 'auto' : '100vh'}
             bgcolor={Color.black}
             textAlign={'center'}
             justifyContent={'space-between'}
@@ -114,6 +114,7 @@ export function Contact() {
                 justifyContent={'center'}
                 alignItems={'center'}
                 bgcolor={Color.gray}
+                mt={isMobile ? '40px' : '0'}
             >
                 <Typography
                     variant="body2"

@@ -18,7 +18,7 @@ export function Exp() {
             alignItems={'center'}
             flexDirection={'column'}
             padding={'40px 0'}
-            gap={'40px'}
+            gap={isMobile ? '20px' : '40px'}
         >
             <Typography variant="h4" color={Color.black} fontWeight={600}>
                 {t('Experience')}

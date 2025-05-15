@@ -73,7 +73,7 @@ export function Blogs() {
                 width="100%"
                 m="0 auto"
                 flexDirection="column"
-                gap="40px"
+                gap={isMobile ? '20px' : '40px'}
             >
                 <Typography
                     variant="h4"
@@ -88,7 +88,7 @@ export function Blogs() {
                     variant="body1"
                     color={Color.grayText}
                     fontWeight={400}
-                    width="50%"
+                    width={isMobile ? '90%' : '50%'}
                     textAlign="center"
                 >
                     {t('BlogDescription')}

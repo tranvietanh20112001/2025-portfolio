@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, useMediaQuery } from '@mui/material'
 import { Color } from '../../../components/color'
 import { useTranslation } from 'react-i18next'
 import LazyImage from '../../../components/lazyImage'
@@ -6,6 +6,7 @@ import VietNam from '../../../assets/vietnam.png'
 
 export function Projects() {
     const { t } = useTranslation()
+    const isMobile = useMediaQuery('(max-width: 780px)')
 
     const projectImages = [
         { src: VietNam, alt: 'Project 1' },
@@ -15,7 +16,12 @@ export function Projects() {
     ]
 
     return (
-        <Box width="100%" height="100vh" bgcolor={Color.black}>
+        <Box
+            width="100%"
+            height={isMobile ? 'auto' : '100vh'}
+            bgcolor={Color.black}
+            paddingBottom={isMobile ? '40px' : '0'}
+        >
             <Box
                 display="flex"
                 alignItems="center"
@@ -23,7 +29,7 @@ export function Projects() {
                 width="90%"
                 m="0 auto"
                 flexDirection="column"
-                gap="40px"
+                gap={isMobile ? '20px' : '40px'}
                 maxWidth={'1100px'}
                 margin={'0 auto'}
             >
@@ -40,7 +46,7 @@ export function Projects() {
                     variant="body1"
                     color={Color.grayText}
                     fontWeight={400}
-                    width="50%"
+                    width={isMobile ? '90%' : '50%'}
                     textAlign="center"
                 >
                     {t('ProjectDescription')}

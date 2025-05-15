@@ -57,24 +57,25 @@ export function Index() {
             width={'100%'}
             minWidth={'320px'}
             bgcolor={Color.black}
-            height={'100vh'}
+            height={isMobile ? 'auto:' : '100vh'}
             margin={'0 auto'}
         >
             <Box
-                width={'90%'}
+                width={isMobile ? '100%' : '90%'}
                 maxWidth={'1110px'}
                 margin={'0 auto'}
                 display={'flex'}
                 flexDirection={'column'}
                 justifyContent={'space-between'}
-                height={'100vh'}
+                height={'100%'}
             >
                 <Header />
 
                 <Box
-                    width={'100%'}
+                    width={isMobile ? '90%' : '100%'}
                     display={isMobile ? 'block' : 'flex'}
                     justifyContent={isMobile ? 'center' : 'space-between'}
+                    margin={'0 auto'}
                 >
                     {isMobile ? (
                         <>
@@ -183,11 +184,16 @@ export function Index() {
                     )}
                 </Box>
 
-                <Box width={'100%'} height={'160px'}>
+                <Box
+                    width={isMobile ? '90%' : '100%'}
+                    height={'160px'}
+                    margin={'0 auto'}
+                >
                     <Typography
                         variant="body1"
                         color="white"
                         mb="24px"
+                        mt={isMobile ? '24px' : '0'}
                         sx={{
                             opacity: 0,
                             transform: 'translateY(20px)',
