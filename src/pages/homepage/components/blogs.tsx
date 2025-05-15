@@ -10,32 +10,35 @@ import { useTranslation } from 'react-i18next'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import LazyImage from '../../../components/lazyImage'
-import VietNam from '../../../assets/vietnam.png'
+import Pro2 from '../../../assets/pro2.jpg'
+import Pro3 from '../../../assets/pro3.jpg'
+import Pro4 from '../../../assets/pro4.jpg'
+import Pro1 from '../../../assets/pro1.jpg'
 import { useState } from 'react'
 const blogs = [
     {
         id: 1,
         title: 'My Blog 1',
         descriptionKey: 'BlogDescription',
-        image: VietNam,
+        image: Pro1,
     },
     {
         id: 2,
         title: 'My Blog 2',
         descriptionKey: 'BlogDescription',
-        image: VietNam,
+        image: Pro2,
     },
     {
         id: 3,
         title: 'My Blog 3',
         descriptionKey: 'BlogDescription',
-        image: VietNam,
+        image: Pro3,
     },
     {
         id: 4,
         title: 'My Blog 4',
         descriptionKey: 'BlogDescription',
-        image: VietNam,
+        image: Pro4,
     },
 ]
 

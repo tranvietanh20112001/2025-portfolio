@@ -4,6 +4,8 @@ import { Color } from '../../../components/color'
 import Exp1 from '../../../assets/exp1.jpg'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import LazyImage from '../../../components/lazyImage'
+import Exp2 from '../../../assets/coding-react.jpg'
+import Exp3 from '../../../assets/coding-angular.jpg'
 export function Exp() {
     const { t } = useTranslation()
     const isMobile = useMediaQuery('(max-width: 780px)')
@@ -20,7 +22,12 @@ export function Exp() {
             padding={'40px 0'}
             gap={isMobile ? '20px' : '40px'}
         >
-            <Typography variant="h4" color={Color.black} fontWeight={600}>
+            <Typography
+                variant="h4"
+                color={Color.black}
+                fontWeight={600}
+                textAlign={'center'}
+            >
                 {t('Experience')}
             </Typography>
             <Typography
@@ -100,7 +107,7 @@ export function Exp() {
                     height={'320px'}
                 >
                     <Box width={'50%'} height={'100%'}>
-                        <LazyImage src={Exp1} alt="exp1" placeholder="exp1" />
+                        <LazyImage src={Exp2} alt="exp2" placeholder="exp1" />
                     </Box>
 
                     <Box
@@ -118,7 +125,7 @@ export function Exp() {
                             width={'fit-content'}
                             fontWeight={600}
                         >
-                            Auto QA
+                            FE Developer
                         </Typography>
                         <Typography variant="body1" fontWeight={600}>
                             {t('ExpName2')}
@@ -166,7 +173,7 @@ export function Exp() {
                             width={'fit-content'}
                             fontWeight={600}
                         >
-                            Auto QA
+                            FE Developer
                         </Typography>
                         <Typography variant="body1" fontWeight={600}>
                             {t('ExpName3')}
@@ -191,7 +198,7 @@ export function Exp() {
                         </Button>
                     </Box>
                     <Box width={'50%'} height={'320px'}>
-                        <LazyImage src={Exp1} alt="exp1" placeholder="exp1" />
+                        <LazyImage src={Exp3} alt="exp1" placeholder="exp1" />
                     </Box>
                 </Box>
             </Box>

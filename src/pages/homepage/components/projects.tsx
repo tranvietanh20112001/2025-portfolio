@@ -2,17 +2,19 @@ import { Box, Typography, useMediaQuery } from '@mui/material'
 import { Color } from '../../../components/color'
 import { useTranslation } from 'react-i18next'
 import LazyImage from '../../../components/lazyImage'
-import VietNam from '../../../assets/vietnam.png'
-
+import Pro2 from '../../../assets/pro2.jpg'
+import Pro3 from '../../../assets/pro3.jpg'
+import Pro4 from '../../../assets/pro4.jpg'
+import Pro1 from '../../../assets/pro1.jpg'
 export function Projects() {
     const { t } = useTranslation()
     const isMobile = useMediaQuery('(max-width: 780px)')
 
     const projectImages = [
-        { src: VietNam, alt: 'Project 1' },
-        { src: VietNam, alt: 'Project 2' },
-        { src: VietNam, alt: 'Project 3' },
-        { src: VietNam, alt: 'Project 4' },
+        { src: Pro1, alt: 'Project 1', description: t('Project1') },
+        { src: Pro2, alt: 'Project 2', description: t('Project2') },
+        { src: Pro3, alt: 'Project 3', description: t('Project3') },
+        { src: Pro4, alt: 'Project 4', description: t('Project4') },
     ]
 
     return (
@@ -95,7 +97,16 @@ export function Projects() {
                                     opacity: 0,
                                 }}
                             >
-                                {t('ProjectOverlayText')}
+                                <Typography
+                                    variant="body1"
+                                    color={Color.white}
+                                    fontWeight={600}
+                                    padding="10px"
+                                    textAlign="center"
+                                    fontSize={isMobile ? '12px' : '16px'}
+                                >
+                                    {project.description}
+                                </Typography>
                             </Box>
                         </Box>
                     ))}
