@@ -12,7 +12,6 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext'
 import LazyImage from '../../../components/lazyImage'
 import VietNam from '../../../assets/vietnam.png'
 import { useState } from 'react'
-
 const blogs = [
     {
         id: 1,
